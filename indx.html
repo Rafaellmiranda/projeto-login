@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://fonts.googleapis.com/icon?family=material+Icons"real="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/midia-query.css">
     <title>login</title>
@@ -16,9 +17,22 @@
             <div id="formulario">
                 <h1>login</h1>
                 <p>seja bem-vindo (a) novamente. faça login para acessar sua conta e poder fazer as configuracoes no seu  ambiente</p>
-                <form action="login.php" method="post"></form>
-
-            </div>
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <i class="material-icons">person</i>    
+                    <input type="email" name="login" id="ilogin" placeholder="seu email" autocomplete="email" required max="30">
+                    <label for="ilogin">login</label>
+                    </div>  
+                    <div class="campo" >
+                     <i class="material-icons">vpn-key</i>
+                     <input type="password" name="senha" id="isenha" placeholder="sua senha" autocomplete="current-password" required minlength="8">
+                     <label for="isenha">senha</label>
+                    </div>
+                    <input type="submit"value="entrar">
+                    <a href="esqueci.html">
+                        esqueci a senha <i class="material-icons">mail</i> i>
+                    </a>
+                </form>
 
         </section>
     </main>
